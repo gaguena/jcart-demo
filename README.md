@@ -4,7 +4,6 @@
 Micro Serviço(Spring Boot)
 Modelagem de carriho e lojas.
 
-------------
 
 Banco de dados: 
 Oracle necessário instalar o JAR no repositorio local do maven.
