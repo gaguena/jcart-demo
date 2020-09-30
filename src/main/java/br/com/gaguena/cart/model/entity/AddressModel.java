@@ -22,6 +22,9 @@ public class AddressModel extends BaseEntity<Long> {
 
     @Column(name = "ADDRESS_CITY")
     private String city;
+    
+    @Column(name = "ADDRESS_STREET_NAME")
+    private String street;
 
     @Column(name = "ADDRESS_NUMBER")
     private Integer number;
