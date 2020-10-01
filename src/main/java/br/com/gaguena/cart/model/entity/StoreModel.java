@@ -2,6 +2,9 @@ package br.com.gaguena.cart.model.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -27,4 +30,8 @@ public class StoreModel extends BaseEntity<Long> {
 
     @Column(name = "STORE_CODE", length = 11)
     private String code;
+
+    @ManyToOne
+    @JoinColumn(name = "ADDRESS_ID", foreignKey = @ForeignKey(name = "FK_TB_ADDRESS"))
+    private AddressModel address;
 }
